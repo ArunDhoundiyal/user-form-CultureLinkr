@@ -1,0 +1,250 @@
+.form-bg-container{
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    background-size: cover;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.dark-form-bg-container{
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    background-size: cover;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #000000;
+
+}
+
+
+.form-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 500px;
+    height: 40vh;
+}
+
+@media screen and (max-width:1050px) {
+    
+.form-container{
+    padding: 20px;
+    width: 100%;
+}
+    
+}
+
+.form-card-container{
+    height: 100vh;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.display-success-msg{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #32cd32;
+    font-size: 20px;
+}
+.hide-success-msg{
+    display: none;
+}
+
+
+.display-message-container{
+    height: 100vh;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f5fffa;;
+    overflow: auto
+}
+
+.display-error-msg-container{
+    height: 100vh;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f5fffa;
+    overflow: auto;
+
+}
+.display-message-dark-container{
+    height: 100vh;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #272727;
+    overflow: auto;
+
+}
+
+ul{
+    list-style-type: none;
+    padding: 20px;
+}
+
+.input{
+    width: 100%;
+    height: 50px;
+    font-size: 18px;
+    padding-left: 8px;
+    border:solid 1px darkgrey;
+    border-radius: 8px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.dark-input{
+    width: 100%;
+    height: 50px;
+    font-size: 18px;
+    padding-left: 8px;
+    border:solid 1px #ffffff;
+    color: #ffffff;
+    border-radius: 8px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: transparent;
+}
+
+input:focus{
+    border: solid 2px orange;
+    outline: none;
+}
+
+.dark-input::placeholder{
+    color: #ffffff;
+}
+
+
+
+button{
+    height: 50px;
+    border: solid 0px;
+    background-color:#4166f5;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #ffffff;
+    border-radius: 12px;
+    font-size: 18px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.no-msg{
+    font-weight: bold;
+    color: red;
+    font-size: 18px;
+}
+
+.display-list-item{
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-between;
+    align-items: center;
+    width: 100%; 
+    background-color: #ffffff;  
+    border: solid 1px lightgrey;
+    border-radius: 12px;
+    margin: 8px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    height: 100px;
+}
+.display-dark-list-item{
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-between;
+    align-items: center;
+    width: 100%; 
+    background-color: #000000;  
+    border-radius: 12px;
+    margin: 8px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    height: 100px;
+}
+
+.dark-user-detail-content{
+    color: #ffffff;
+}
+
+
+.user-detail-items{
+    font-weight: bold;
+}
+.dark-user-detail-items{
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.user-detail-container{
+    width: 100%;
+    overflow: auto;
+    padding: 20px;
+    height: 100%;
+}
+
+.delete-container{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+}
+
+.delete-icon{
+    font-size: 30px;
+    color: red;
+    cursor: pointer;
+}
+
+@media screen and (max-width:800px) {
+    .form-bg-container{
+        display: flex;
+        flex-direction: column;
+    }
+    .dark-form-bg-container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .form-card-container{
+        width: 100%;
+        border-bottom: solid 1px lightgrey;
+    }
+    .display-message-dark-container{
+        width: 100%;
+    }
+
+    .display-message-container{
+        width: 100%;
+    }
+    .display-error-msg-container{
+        width: 100%;
+    
+    }
+    .form-container{
+        height: 100%;
+        width: 100%;
+        padding: 20px;
+    }
+    .user-icon{
+        display: none;
+    }
+    .user-icon{
+        display: none;
+    }
+    .display-success-msg{
+        margin-top: 20px;
+    }
+    
+}
+
